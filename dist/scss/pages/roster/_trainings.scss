@@ -1,0 +1,188 @@
+/* ROSTER TRAININGS
+======================================================================================================================= */
+.roster-trainings {
+  background-image: url(../img/bg/bg-roster4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  padding: 6rem 0 10rem 0;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 75%;
+    top: 0;
+    left: 0;
+    background: rgb(2,1,56);
+    background: linear-gradient(180deg, rgba(2,1,56,1) 20%, rgba(2,1,56,0) 100%);
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    background: rgb(2,1,56);
+    background: linear-gradient(0deg, rgba(2,1,56,1) 20%, rgba(2,1,56,0) 100%);
+    z-index: 1;
+  }
+  .roster-trainings__content {
+    position: relative;
+    z-index: 2;
+    color: $cw;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+  }
+  .roster-trainings__title {
+    font-family: $fp1;
+    font-size: 60px;
+    line-height: .8;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 310px;
+    margin: 0;
+  }
+  .roster-trainings__text {
+    font-family: $fp2;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 510px;
+    margin: 2rem 0 0 0;
+  }
+  .roster-trainings__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: $cw;
+    font-size: 35px;
+    line-height: 1;
+    width: 270px;
+    height: 48px;
+    background-color: $cp2;
+    margin: 1rem 0 0 0;
+    border-radius: 40px;
+    font-family: $fp1;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    background: linear-gradient($cp2, $cp2) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+    border: 2px solid rgba($color: $cp2, $alpha: 0);
+    box-shadow: 0 12px 0 $cp3;
+    margin: 6rem 0 0 0;
+  }
+  .swiper {
+    height: 600px;
+    padding: 0 6.2rem 0 0;
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide-next {
+    .swiper-item {
+      width: 450px;
+      height: 195px;
+    }
+    .swiper-item {
+      border: 2px solid $cp1;
+      box-shadow: 0 0 3px $cw, 0 0 5px $cp1 inset;
+      transition: all .2s ease-in-out;
+    }
+    .swiper-body {
+      background-color: rgba($color: $cw, $alpha: 0.3);
+      backdrop-filter: blur(30px);
+      transition: all .2s ease-in-out;
+      width: 240px;
+      height: 120px;
+    }
+    .swiper-title {
+      text-align: left;
+      transition: all .2s ease-in-out;
+      font-size: 20px;
+    }
+    .swiper-text {
+      opacity: 1;
+      transition: all .2s ease-in-out;
+      font-size: 16px;
+    }
+    .swiper-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .swiper-item {
+    width: 410px;
+    height: 175px;
+    border: 0px solid $cp1;
+    border-radius: 20px;
+    padding: 1rem 1rem 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 0 auto;
+    box-shadow: none;
+  }
+  .swiper-body {
+    width: 210px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: rgba($color: $cw, $alpha: 0);
+    backdrop-filter: blur(0);
+    padding: 1rem;
+  }
+  .swiper-title {
+    margin: 0;
+    font-family: $fp1;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: right;
+  }
+  .swiper-text {
+    font-size: 14px;
+    font-family: $fp2;
+    line-height: 1.2;
+    margin: 5px 0 0 0;
+    opacity: 0;
+  }
+  .swiper-figure {
+    box-shadow: 0 0 6px $cw, 0 0 6px $cp1, 0 0 12px $cp1;
+    border-radius: 15px;
+  }
+  .swiper-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    object-position: 50%;
+  }
+  .swiper-button {
+    display: none;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    right: 18px;
+    left: initial;
+    &::after {
+      content: "";
+    }
+    img {
+      width: 53px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    top: initial;
+    bottom: 42%;
+    transform: rotateZ(-90deg);
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    transform: rotateZ(-90deg);
+    top: 42%;
+  }
+}

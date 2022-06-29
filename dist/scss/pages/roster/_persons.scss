@@ -1,0 +1,283 @@
+/* ROSTER PERSONS
+======================================================================================================================= */
+.roster-persons {
+  background-image: url(../img/bg/bg-roster2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  padding: 4rem 0 2rem 0;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(2,1,56);
+    background: linear-gradient(180deg, rgba(2,1,56,1) 0%, rgba(2,1,56,0.6) 100%);
+    z-index: 1;
+  }
+  .roster-persons__layer {
+    position: absolute;
+    z-index: 2;
+    &.layer1 {
+      top: -26rem;
+      left: 0;
+      width: 100px;
+    }
+    &.layer2 {
+      bottom: 30rem;
+      right: 0;
+      width: 110px;
+    }
+  }
+  .roster-persons__content {
+    position: relative;
+    z-index: 2;
+  }
+  .roster-persons__title {
+    font-family: $fp1;
+    color: $cw;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .roster-persons__text {
+    font-family: $fp2;
+    color: $cw;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+  }
+  .roster-persons__info {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 3rem 0 6rem 0;
+  }
+  .swiper {
+    height: 100%;
+  }
+  .swiper-slide {
+    height: calc(100% / 2);
+  }
+  .swiper-wrapper {
+    padding: 2rem 0 8rem 0;
+    height: 550px;
+  }
+  .swiper-item {
+    cursor: pointer;
+    width: 190px;
+    height: auto;
+    margin: 1rem auto;
+    position: relative;
+    border-radius: 7px;
+    padding: 10px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../img/misc/glow.png);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      z-index: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: rgba($color: $cw, $alpha: .3);
+      border: 2px solid rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(5px);
+      box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &.active {
+      border: 2px solid rgba($color: $cw, $alpha: .6);
+      border-radius: 12px;
+    }
+  }
+  .swiper-figure {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient($cp2, $cp2) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+    border: 2px solid rgba($color: $cp2, $alpha: 0);
+  }
+  .swiper-image {
+    width: 100%;
+  }
+  .swiper-title,
+  .swiper-text,
+  .swiper-discord,
+  .swiper-twitch {
+    display: none;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 90%;
+    &::after {
+      content: "";
+    }
+    img {
+      width: 53px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 44%;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 44%;
+  }
+  .roster-persons__card {
+    padding: 3rem 0 0 0;
+  }
+  .card-item {
+    width: 390px;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../img/misc/glow.png);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      z-index: 0;
+      transform: scaleX(-1);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: rgba($color: $cw, $alpha: .3);
+      border: 2px solid rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(5px);
+      box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  .card-item__figure {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient($cp2, $cp2) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+    border: 2px solid rgba($color: $cp2, $alpha: 0);
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(2.66deg, rgba(7, 1, 44, 0.6) 54.14%, rgba(7, 1, 44, 0.3) 76.24%, rgba(7, 1, 44, 0) 95.72%);
+    }
+  }
+  .card-item__image {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: 50%;
+  }
+  .card-item__links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba($color: $cw, $alpha: .5);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+  }
+  .links-item {
+    display: inline-block;
+    margin: 0 0 0 1rem;
+  }
+  .links-image {
+    width: 48px;
+  }
+  .card-item__body {
+    margin: 1rem 0 0 0;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: rgba($color: $cw, $alpha: .5);
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+  .card-item__title {
+    color: $cp2;
+    font-family: $fp1;
+    font-size: 25px;
+    line-height: 1;
+    margin: 0;
+    font-weight: 700;
+  }
+  .card-item__text {
+    color: $cp2;
+    font-family: $fp2;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 5px 0 0 0;
+    font-weight: 300;
+  }
+  .card-item__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: $cw;
+    font-size: 28px;
+    line-height: 1;
+    width: 160px;
+    height: 38px;
+    background-color: $cp2;
+    margin: 10px auto 0 auto;
+    border-radius: 40px;
+    font-family: $fp1;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    background: linear-gradient($cp2, $cp2) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+    border: 2px solid rgba($color: $cp2, $alpha: 0);
+    box-shadow: 0 12px 0 $cp3;
+  }
+  .roster-persons__image {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: 50%;
+  }
+}

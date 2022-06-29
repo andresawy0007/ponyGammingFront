@@ -1,0 +1,162 @@
+/* ROSTER TIPS
+======================================================================================================================= */
+.roster-tips {
+  .roster-tips__content {
+    background-image: url(../img/bg/bg-roster3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    position: relative;
+    color: $cw;
+    padding: 6rem 0 22rem 0;
+    z-index: 2;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 35%;
+      top: 0;
+      left: 0;
+      background: rgb(2,1,56);
+      background: linear-gradient(180deg, rgba(2,1,56,1) 20%, rgba(2,1,56,0) 100%);
+      z-index: 1;
+    }
+  }
+  .roster-tips__title,
+  .roster-tips__text,
+  .roster-tips__swiper {
+    position: relative;
+    z-index: 1;
+  }
+  .roster-tips__title {
+    font-family: $fp1;
+    color: $cw;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .roster-tips__text {
+    width: 580px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 1rem 0 0 0;
+    font-family: $fp2;
+  }
+  .roster-tips__swiper {
+    margin: 4rem 0 0 0;
+  }
+  .swiper-wrapper {
+    padding: 0 0 6rem 0;
+  }
+  .swiper-item {
+    width: 375px;
+    height: auto;
+    border-top: 2px solid $cw;
+    border-bottom: 2px solid $cw;
+    background-color: rgba($color: $cw, $alpha: 0.1);
+    backdrop-filter: blur(45.2708px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $cw;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+  }
+  .swiper-title {
+    font-size: 32px;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: $fp1;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .swiper-text {
+    font-family: $fp2;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 1rem 0 0 0;
+  }
+  .swiper-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: $cw;
+    font-size: 28px;
+    line-height: 1;
+    width: 160px;
+    height: 38px;
+    background-color: $cp2;
+    margin: 1rem 0 0 0;
+    border-radius: 40px;
+    font-family: $fp1;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    background: linear-gradient($cp2, $cp2) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+    border: 2px solid rgba($color: $cp2, $alpha: 0);
+    box-shadow: 0 12px 0 $cp3;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 90%;
+    &::after {
+      content: "";
+    }
+    img {
+      width: 53px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 46%;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 46%;
+  }
+  .roster-tips__layer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .roster-tips__figure {
+    position: relative;
+    margin: -18rem 0 0 0;
+    z-index: 0;
+    background-image: url(../img/bg/bg-roster3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 35%;
+      bottom: 0;
+      left: 0;
+      background: rgb(2,1,56);
+      background: linear-gradient(0deg, rgba(2,1,56,1) 0%, rgba(2,1,56,0) 100%);
+      z-index: 1;
+    }
+  }
+  .roster-tips__cover {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    object-position: 50%;
+  }
+  .roster-tips__play {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    z-index: 2;
+  }
+}

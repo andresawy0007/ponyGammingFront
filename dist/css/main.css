@@ -1,0 +1,1488 @@
+/* FONTS
+======================================================================================================================= */
+@font-face {
+  font-family: "Beni";
+  src: url("../fonts/BeniLight.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Beni";
+  src: url("../fonts/BeniRegular.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Beni";
+  src: url("../fonts/BeniBold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Beni";
+  src: url("../fonts/BeniBlack.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaLight.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaRegular.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaBold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Leonore";
+  src: url("../fonts/LeonoreOutline.otf");
+}
+/* Base
+======================================================================================================================= */
+main {
+  overflow-x: hidden;
+}
+
+a, a:active, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+body.modal-visible {
+  overflow: hidden;
+}
+
+/* Animations
+======================================================================================================================= */
+/* HEADER
+======================================================================================================================= */
+/* FOOTER
+======================================================================================================================= */
+/* REGISTER RECORD
+======================================================================================================================= */
+.register-record {
+  background-image: url(../img/bg/bg-register.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  padding: 10rem 0 4rem 0;
+  position: relative;
+}
+.register-record::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(0deg, rgb(2, 1, 56) 0%, rgba(2, 1, 56, 0.7) 60%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.register-record .register-record__layer {
+  position: absolute;
+  width: 885px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  mix-blend-mode: difference;
+  opacity: 0.8;
+}
+.register-record .register-record__content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.register-record .register-record__figure {
+  height: 100%;
+  border-radius: 15px;
+  background-image: url(../img/misc/figure-register-record.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+}
+.register-record .register-record__logo {
+  width: 235px;
+  display: block;
+  margin: 5rem auto 0 auto;
+}
+.register-record .register-record__title {
+  text-align: center;
+  color: #0DFCB2;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+  font-size: 64px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  font-family: "Beni";
+  font-weight: 700;
+}
+.register-record .register-record__box {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid;
+  backdrop-filter: blur(45px);
+  border: 4px solid #FFFFFF;
+  padding: 2rem 3rem 3rem 3rem;
+}
+.register-record .register-record__subtitle {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 0.9;
+  letter-spacing: 0.03em;
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Beni";
+  font-weight: 700;
+  text-align: center;
+}
+.register-record .register-record__form {
+  margin: 2rem 0 0 0;
+  font-family: "Helvetica";
+}
+.register-record .form-group {
+  margin: 0 0 1rem 0;
+}
+.register-record .form-group__birthdate {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+}
+.register-record .form-group__birthdate select.input-control {
+  background-position: 90% 50%;
+}
+.register-record .label-control {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  margin: 0 0 5px 0;
+  font-weight: 700;
+}
+.register-record .input-control {
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  height: 46px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: #FFFFFF;
+  padding: 0 1rem;
+}
+.register-record .input-control::placeholder {
+  color: #FFFFFF;
+}
+.register-record .input-control:focus {
+  outline: none;
+}
+.register-record select.input-control {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-image: url(../img/misc/icon-select.svg);
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 96% 50%;
+}
+.register-record option {
+  color: #000000;
+}
+.register-record hr {
+  opacity: 1;
+  color: #FFFFFF;
+}
+.register-record .form-group__checkbox {
+  margin: 0 0 0.4rem 0;
+}
+.register-record .input-control__checkbox {
+  width: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+.register-record .input-control__checkbox:checked + .label-control__checkbox::after {
+  opacity: 1;
+}
+.register-record .label-control__checkbox {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0 0 0 1.4rem;
+  position: relative;
+}
+.register-record .label-control__checkbox a {
+  text-decoration: underline;
+}
+.register-record .label-control__checkbox::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+}
+.register-record .label-control__checkbox::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/misc/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-position: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.register-record .form-group__submit {
+  margin: 2rem 0 0 0;
+}
+.register-record .submit-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 35px;
+  line-height: 1;
+  width: 272px;
+  height: 48px;
+  background-color: #6A05B5;
+  margin: 0 auto;
+  border-radius: 40px;
+  font-family: "Beni";
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+  box-shadow: 0 12px 0 #3B0165;
+}
+
+/* REGISTER STEPS
+======================================================================================================================= */
+.register-steps {
+  padding: 4rem 0 8rem 0;
+  position: relative;
+  background: #020138;
+}
+.register-steps .register-steps__content {
+  position: relative;
+  z-index: 1;
+}
+.register-steps .register-steps__title {
+  color: #FFFFFF;
+  font-family: "Beni";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+.register-steps .register-steps__swiper {
+  margin: 4rem 0 0 0;
+}
+.register-steps .swiper-wrapper {
+  padding: 60px 0 0 0;
+}
+.register-steps .swiper-item {
+  background: radial-gradient(53.39% 74.8% at 50% 46.61%, rgba(204, 0, 255, 0.4) 0%, rgba(0, 61, 166, 0.4) 100%);
+  width: 310px;
+  height: 250px;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  position: relative;
+  font-family: "Beni";
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.register-steps .swiper-number {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2), inset 0px 0px 40px #6A05B5, inset 0px 0px 5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 150px;
+  color: #FFFFFF;
+  font-size: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  top: -60px;
+}
+.register-steps .swiper-title {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.register-steps .swiper-subtitle {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* ROSTERS BANNER
+======================================================================================================================= */
+.rosters-banner {
+  background-image: url(../img/bg/bg-rosters.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  padding: 4rem 0 18rem 0;
+  position: relative;
+}
+.rosters-banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  mix-blend-mode: soft-light;
+}
+.rosters-banner::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(0deg, rgb(2, 1, 56) 0%, rgba(2, 1, 56, 0.6923144258) 60%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.rosters-banner .rosters-banner__layer {
+  position: absolute;
+  z-index: 2;
+}
+.rosters-banner .rosters-banner__layer.layer1 {
+  top: 0;
+  right: 0;
+  width: 1000px;
+}
+.rosters-banner .rosters-banner__layer.layer2 {
+  top: 0;
+  left: 6rem;
+  width: 30px;
+}
+.rosters-banner .rosters-banner__layer.layer3 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.rosters-banner .rosters-banner__content {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.rosters-banner .rosters-banner__logo {
+  width: 120px;
+}
+.rosters-banner .rosters-banner__title {
+  font-size: 80px;
+  font-family: "Beni";
+  line-height: 1;
+  font-weight: 700;
+  margin: 0.4rem 0 0 0;
+}
+.rosters-banner .rosters-banner__text {
+  width: 460px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Helvetica";
+  margin: 1.6rem 0 0 0;
+}
+
+/* ROSTERS TEAM
+======================================================================================================================= */
+.rosters-team {
+  padding: 1rem 0 8rem 0;
+  background: #020138;
+}
+.rosters-team .rosters-team__content {
+  text-align: center;
+  color: #FFFFFF;
+}
+.rosters-team .rosters-team__title {
+  text-transform: uppercase;
+  font-family: "Beni";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+.rosters-team .rosters-team__text {
+  width: 770px;
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 1rem auto 0 auto;
+}
+.rosters-team .rosters-team__swiper {
+  margin: 2rem 0 0 0;
+}
+.rosters-team .swiper-wrapper {
+  padding: 2rem 0;
+}
+.rosters-team .swiper-item {
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.rosters-team .swiper-item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/misc/glow.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  z-index: 0;
+}
+.rosters-team .swiper-item::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.rosters-team .swiper-figure {
+  position: relative;
+  z-index: 2;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+}
+.rosters-team .swiper-figure::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(2.66deg, rgba(7, 1, 44, 0.6) 54.14%, rgba(7, 1, 44, 0.3) 76.24%, rgba(7, 1, 44, 0) 95.72%);
+}
+.rosters-team .swiper-image {
+  width: 100%;
+}
+.rosters-team .swiper-body {
+  margin: 1rem 0 0 0;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+.rosters-team .swiper-title {
+  color: #003B7D;
+  font-family: "Beni";
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  font-weight: 700;
+}
+.rosters-team .swiper-text {
+  color: #003B7D;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 5px 0 0 0;
+  font-weight: 300;
+}
+.rosters-team .swiper-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 1;
+  width: 90%;
+  height: 38px;
+  background-color: #6A05B5;
+  margin: 1rem auto 0 auto;
+  border-radius: 40px;
+  font-family: "Beni";
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+  box-shadow: 0 12px 0 #3B0165;
+}
+
+/* ROSTER BANNER
+======================================================================================================================= */
+.roster-banner {
+  position: relative;
+}
+.roster-banner::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 75%;
+  top: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(180deg, rgba(2, 1, 56, 0.6) 0%, rgba(2, 1, 56, 0.3) 60%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.roster-banner::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(0deg, rgb(2, 1, 56) 20%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.roster-banner .roster-banner__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+  position: absolute;
+  z-index: 0;
+}
+.roster-banner .roster-banner__content {
+  padding: 2rem 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 515px;
+  justify-content: space-between;
+}
+.roster-banner .roster-banner__logo {
+  width: 165px;
+}
+.roster-banner .roster-banner__title {
+  font-family: "Beni";
+  color: #FFFFFF;
+  font-size: 80px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.roster-banner .roster-banner__subtitle {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Leonore";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 1rem 0 0 0;
+  letter-spacing: 0.03em;
+  text-shadow: -1px -1px 3px #FFFFFF, 0 0 7px #6A05B5, 0 0 9px #FFFFFF, 0 0 11px #6A05B5;
+}
+
+/* ROSTER PERSONS
+======================================================================================================================= */
+.roster-persons {
+  background-image: url(../img/bg/bg-roster2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  padding: 4rem 0 2rem 0;
+}
+.roster-persons::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(180deg, rgb(2, 1, 56) 0%, rgba(2, 1, 56, 0.6) 100%);
+  z-index: 1;
+}
+.roster-persons .roster-persons__layer {
+  position: absolute;
+  z-index: 2;
+}
+.roster-persons .roster-persons__layer.layer1 {
+  top: -26rem;
+  left: 0;
+  width: 100px;
+}
+.roster-persons .roster-persons__layer.layer2 {
+  bottom: 30rem;
+  right: 0;
+  width: 110px;
+}
+.roster-persons .roster-persons__content {
+  position: relative;
+  z-index: 2;
+}
+.roster-persons .roster-persons__title {
+  font-family: "Beni";
+  color: #FFFFFF;
+  font-size: 60px;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.roster-persons .roster-persons__text {
+  font-family: "Helvetica";
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 90%;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+}
+.roster-persons .roster-persons__info {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 3rem 0 6rem 0;
+}
+.roster-persons .swiper {
+  height: 100%;
+}
+.roster-persons .swiper-slide {
+  height: 50%;
+}
+.roster-persons .swiper-wrapper {
+  padding: 2rem 0 8rem 0;
+  height: 550px;
+}
+.roster-persons .swiper-item {
+  cursor: pointer;
+  width: 190px;
+  height: auto;
+  margin: 1rem auto;
+  position: relative;
+  border-radius: 7px;
+  padding: 10px;
+}
+.roster-persons .swiper-item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/misc/glow.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  width: 130%;
+  height: 130%;
+  top: -15%;
+  left: -15%;
+  z-index: 0;
+}
+.roster-persons .swiper-item::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.roster-persons .swiper-item.active {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+}
+.roster-persons .swiper-figure {
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+}
+.roster-persons .swiper-image {
+  width: 100%;
+}
+.roster-persons .swiper-title,
+.roster-persons .swiper-text,
+.roster-persons .swiper-discord,
+.roster-persons .swiper-twitch {
+  display: none;
+}
+.roster-persons .swiper-button-prev,
+.roster-persons .swiper-button-next {
+  top: 90%;
+}
+.roster-persons .swiper-button-prev::after,
+.roster-persons .swiper-button-next::after {
+  content: "";
+}
+.roster-persons .swiper-button-prev img,
+.roster-persons .swiper-button-next img {
+  width: 53px;
+}
+.roster-persons .swiper-button-next,
+.roster-persons .swiper-rtl .swiper-button-prev {
+  right: 44%;
+}
+.roster-persons .swiper-button-prev,
+.roster-persons .swiper-rtl .swiper-button-next {
+  left: 44%;
+}
+.roster-persons .roster-persons__card {
+  padding: 3rem 0 0 0;
+}
+.roster-persons .card-item {
+  width: 390px;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.roster-persons .card-item::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/misc/glow.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  z-index: 0;
+  transform: scaleX(-1);
+}
+.roster-persons .card-item::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.roster-persons .card-item__figure {
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+}
+.roster-persons .card-item__figure::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(2.66deg, rgba(7, 1, 44, 0.6) 54.14%, rgba(7, 1, 44, 0.3) 76.24%, rgba(7, 1, 44, 0) 95.72%);
+}
+.roster-persons .card-item__image {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  object-position: 50%;
+}
+.roster-persons .card-item__links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+.roster-persons .links-item {
+  display: inline-block;
+  margin: 0 0 0 1rem;
+}
+.roster-persons .links-image {
+  width: 48px;
+}
+.roster-persons .card-item__body {
+  margin: 1rem 0 0 0;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+.roster-persons .card-item__title {
+  color: #6A05B5;
+  font-family: "Beni";
+  font-size: 25px;
+  line-height: 1;
+  margin: 0;
+  font-weight: 700;
+}
+.roster-persons .card-item__text {
+  color: #6A05B5;
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 5px 0 0 0;
+  font-weight: 300;
+}
+.roster-persons .card-item__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 1;
+  width: 160px;
+  height: 38px;
+  background-color: #6A05B5;
+  margin: 10px auto 0 auto;
+  border-radius: 40px;
+  font-family: "Beni";
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+  box-shadow: 0 12px 0 #3B0165;
+}
+.roster-persons .roster-persons__image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+/* ROSTER TIPS
+======================================================================================================================= */
+.roster-tips .roster-tips__content {
+  background-image: url(../img/bg/bg-roster3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  position: relative;
+  color: #FFFFFF;
+  padding: 6rem 0 22rem 0;
+  z-index: 2;
+}
+.roster-tips .roster-tips__content::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 35%;
+  top: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(180deg, rgb(2, 1, 56) 20%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.roster-tips .roster-tips__title,
+.roster-tips .roster-tips__text,
+.roster-tips .roster-tips__swiper {
+  position: relative;
+  z-index: 1;
+}
+.roster-tips .roster-tips__title {
+  font-family: "Beni";
+  color: #FFFFFF;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.roster-tips .roster-tips__text {
+  width: 580px;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 1rem 0 0 0;
+  font-family: "Helvetica";
+}
+.roster-tips .roster-tips__swiper {
+  margin: 4rem 0 0 0;
+}
+.roster-tips .swiper-wrapper {
+  padding: 0 0 6rem 0;
+}
+.roster-tips .swiper-item {
+  width: 375px;
+  height: auto;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(45.2708px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+.roster-tips .swiper-title {
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Beni";
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.roster-tips .swiper-text {
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 1rem 0 0 0;
+}
+.roster-tips .swiper-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 1;
+  width: 160px;
+  height: 38px;
+  background-color: #6A05B5;
+  margin: 1rem 0 0 0;
+  border-radius: 40px;
+  font-family: "Beni";
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+  box-shadow: 0 12px 0 #3B0165;
+}
+.roster-tips .swiper-button-prev,
+.roster-tips .swiper-button-next {
+  top: 90%;
+}
+.roster-tips .swiper-button-prev::after,
+.roster-tips .swiper-button-next::after {
+  content: "";
+}
+.roster-tips .swiper-button-prev img,
+.roster-tips .swiper-button-next img {
+  width: 53px;
+}
+.roster-tips .swiper-button-next,
+.roster-tips .swiper-rtl .swiper-button-prev {
+  right: 46%;
+}
+.roster-tips .swiper-button-prev,
+.roster-tips .swiper-rtl .swiper-button-next {
+  left: 46%;
+}
+.roster-tips .roster-tips__layer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.roster-tips .roster-tips__figure {
+  position: relative;
+  margin: -18rem 0 0 0;
+  z-index: 0;
+  background-image: url(../img/bg/bg-roster3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+.roster-tips .roster-tips__figure::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(0deg, rgb(2, 1, 56) 0%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.roster-tips .roster-tips__cover {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  object-position: 50%;
+}
+.roster-tips .roster-tips__play {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  z-index: 2;
+}
+
+/* ROSTER TRAININGS
+======================================================================================================================= */
+.roster-trainings {
+  background-image: url(../img/bg/bg-roster4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  padding: 6rem 0 10rem 0;
+}
+.roster-trainings::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 75%;
+  top: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(180deg, rgb(2, 1, 56) 20%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.roster-trainings::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  left: 0;
+  background: rgb(2, 1, 56);
+  background: linear-gradient(0deg, rgb(2, 1, 56) 20%, rgba(2, 1, 56, 0) 100%);
+  z-index: 1;
+}
+.roster-trainings .roster-trainings__content {
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+}
+.roster-trainings .roster-trainings__title {
+  font-family: "Beni";
+  font-size: 60px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 310px;
+  margin: 0;
+}
+.roster-trainings .roster-trainings__text {
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 1.4;
+  width: 510px;
+  margin: 2rem 0 0 0;
+}
+.roster-trainings .roster-trainings__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 35px;
+  line-height: 1;
+  width: 270px;
+  height: 48px;
+  background-color: #6A05B5;
+  margin: 1rem 0 0 0;
+  border-radius: 40px;
+  font-family: "Beni";
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: linear-gradient(#6A05B5, #6A05B5) padding-box, linear-gradient(180deg, #00DEEC 0%, #C882FF 45.64%, #00DEEC 68.04%, #CC00FF 100%) border-box;
+  border: 2px solid rgba(106, 5, 181, 0);
+  box-shadow: 0 12px 0 #3B0165;
+  margin: 6rem 0 0 0;
+}
+.roster-trainings .swiper {
+  height: 600px;
+  padding: 0 6.2rem 0 0;
+}
+.roster-trainings .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.roster-trainings .swiper-slide-next .swiper-item {
+  width: 450px;
+  height: 195px;
+}
+.roster-trainings .swiper-slide-next .swiper-item {
+  border: 2px solid #0DFCB2;
+  box-shadow: 0 0 3px #FFFFFF, 0 0 5px #0DFCB2 inset;
+  transition: all 0.2s ease-in-out;
+}
+.roster-trainings .swiper-slide-next .swiper-body {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  transition: all 0.2s ease-in-out;
+  width: 240px;
+  height: 120px;
+}
+.roster-trainings .swiper-slide-next .swiper-title {
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+}
+.roster-trainings .swiper-slide-next .swiper-text {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+}
+.roster-trainings .swiper-slide-next .swiper-image {
+  width: 150px;
+  height: 150px;
+}
+.roster-trainings .swiper-item {
+  width: 410px;
+  height: 175px;
+  border: 0px solid #0DFCB2;
+  border-radius: 20px;
+  padding: 1rem 1rem 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 0 auto;
+  box-shadow: none;
+}
+.roster-trainings .swiper-body {
+  width: 210px;
+  height: 110px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0);
+  padding: 1rem;
+}
+.roster-trainings .swiper-title {
+  margin: 0;
+  font-family: "Beni";
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: right;
+}
+.roster-trainings .swiper-text {
+  font-size: 14px;
+  font-family: "Helvetica";
+  line-height: 1.2;
+  margin: 5px 0 0 0;
+  opacity: 0;
+}
+.roster-trainings .swiper-figure {
+  box-shadow: 0 0 6px #FFFFFF, 0 0 6px #0DFCB2, 0 0 12px #0DFCB2;
+  border-radius: 15px;
+}
+.roster-trainings .swiper-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  object-position: 50%;
+}
+.roster-trainings .swiper-button {
+  display: none;
+}
+.roster-trainings .swiper-button-prev,
+.roster-trainings .swiper-button-next {
+  right: 18px;
+  left: initial;
+}
+.roster-trainings .swiper-button-prev::after,
+.roster-trainings .swiper-button-next::after {
+  content: "";
+}
+.roster-trainings .swiper-button-prev img,
+.roster-trainings .swiper-button-next img {
+  width: 53px;
+}
+.roster-trainings .swiper-button-next,
+.roster-trainings .swiper-rtl .swiper-button-prev {
+  top: initial;
+  bottom: 42%;
+  transform: rotateZ(-90deg);
+}
+.roster-trainings .swiper-button-prev,
+.roster-trainings .swiper-rtl .swiper-button-next {
+  transform: rotateZ(-90deg);
+  top: 42%;
+}
+
+/* HOME BANNER
+======================================================================================================================= */
+.home-banner {
+  background-image: url("../img/bg/bg-home1_movil.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.home-banner .home-banner__layer {
+  position: absolute;
+  width: 65vw;
+  z-index: 2;
+}
+.home-banner .home-banner__layer.layer1 {
+  left: 0px;
+  top: 0px;
+}
+.home-banner .home-banner__layer.layer2 {
+  display: none;
+}
+.home-banner .home-banner__content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+.home-banner .home-banner__content .home-banner__logo {
+  width: 250px;
+  margin: 90px 0px 80px;
+}
+.home-banner .home-banner__content .home-banner__title {
+  font-family: "Beni";
+  color: #0DFCB2;
+  font-size: 50px;
+  line-height: 40px;
+  margin: 0px 0px 50px;
+}
+.home-banner .home-banner__content .home-banner__subtitle {
+  font-family: "Beni";
+  color: #FFED00;
+  font-size: 50px;
+  line-height: 40px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+/* MODAL VIDEO
+======================================================================================================================= */
+.modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.4s all cubic-bezier(0.645, 0.045, 0.355, 1);
+  backdrop-filter: blur(40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-video.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-video .model-video__content {
+  position: relative;
+}
+.modal-video .modal-video__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.modal-video .modal-video__close img {
+  width: 52px;
+}
+.modal-video .modal-video__iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+/* MODAL DETAIL
+======================================================================================================================= */
+.modal-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.4s all cubic-bezier(0.645, 0.045, 0.355, 1);
+  backdrop-filter: blur(40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-detail.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-detail .modal-detail__content {
+  position: relative;
+  border-radius: 30px;
+  background-image: url(../img/bg/bg-modal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding: 6rem;
+  overflow: hidden;
+}
+.modal-detail .modal-detail__content::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100%;
+  background-image: url(../img/misc/layer8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modal-detail .modal-detail__content::after {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 100%;
+  background-image: url(../img/misc/layer9.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  right: -18px;
+  z-index: 1;
+}
+.modal-detail .modal-detail__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 2;
+}
+.modal-detail .modal-detail__close img {
+  width: 52px;
+}
+.modal-detail .modal-detail__box {
+  display: grid;
+  grid-template-columns: 65% 30%;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 3;
+}
+.modal-detail .modal-detail__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Beni";
+  margin: 0;
+}
+.modal-detail .modal-detail__subtitle {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Leonore";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 1rem 0 0 0;
+  letter-spacing: 0.03em;
+  text-shadow: -1px -1px 3px #FFFFFF, 0 0 7px #6A05B5, 0 0 9px #FFFFFF, 0 0 11px #6A05B5;
+}
+.modal-detail .modal-detail__text {
+  font-family: "Helvetica";
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 1.4rem 0 0 0;
+}
+.modal-detail .modal-detail__links {
+  margin: 2rem 0;
+}
+.modal-detail .links-item {
+  margin: 0 1rem 0 0;
+}
+.modal-detail .modal-detail__skills {
+  margin: 1.6rem 0 0 0;
+  display: flex;
+}
+.modal-detail .skills-item {
+  font-size: 18px;
+  font-family: "Beni";
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding: 0 40px;
+  border-radius: 30px;
+  border: 1px solid #FFFFFF;
+  margin: 0 1rem 1rem 0;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.modal-detail .modal-detail__figure {
+  position: relative;
+}
+.modal-detail .modal-detail__logo {
+  position: absolute;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  width: 120px;
+}
+.modal-detail .modal-detail__image {
+  width: 100%;
+}
+.modal-detail .item-mobile {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
